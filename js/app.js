@@ -16,12 +16,10 @@ addBtn.addEventListener("click", () => {
     let title = prompt("اكتب اسم المهمة");
     if (!title) return;
 
-    let date = prompt("اكتب التاريخ (مثال: 1/10/2024)");
-    if (!date) return;
-
+    
     tasks.push({
         title: title,
-        date: date,
+        
         completed: false
     });
 
@@ -43,10 +41,7 @@ function renderTasks() {
         taskDiv.innerHTML = `
             <div>
                 <h2>${task.title}</h2>
-                <span>
-                    <i style="padding-left:10px" class="fa-regular fa-calendar-days"></i>
-                    ${task.date}
-                </span>
+                
             </div>
 
             <div class="btn">
@@ -139,32 +134,3 @@ darkBtn.addEventListener("click", () => {
         document.body.classList.contains("dark") ? "on" : "off"
     );
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
