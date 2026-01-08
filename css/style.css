@@ -184,6 +184,9 @@ body.dark .task.completed h3 {
 }
 /* Mobile */
 @media (max-width:600px){
+    body {
+        padding: 20px;
+    }
     .task {
 
         flex-direction: column;
